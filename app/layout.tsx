@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
-import '../src/shared/styles/reset.css';
-import '../src/shared/styles/globals.css';
+import '@/shared/styles/reset.css';
+import '@/shared/styles/globals.css';
+
+import { Header, Footer } from '@/widgets/layouts';
 
 export const metadata: Metadata = {
   title: '머니로그',
@@ -27,7 +29,9 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
