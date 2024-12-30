@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
+
+import { ClientThemeProvider } from '@/app/providers';
 import '@/shared/styles/reset.css';
 import '@/shared/styles/globals.css';
-
 import { Header, Footer } from '@/widgets/layouts';
 
 export const metadata: Metadata = {
@@ -29,9 +30,11 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <ClientThemeProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </ClientThemeProvider>
       </body>
     </html>
   );
