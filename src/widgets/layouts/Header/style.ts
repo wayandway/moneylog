@@ -1,7 +1,7 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import styled from '@emotion/styled';
-import colors from '@/shared/styles/colors';
+import { colors, DESKTOP } from '@/shared/styles';
 
 export const Container = styled(AppBar)`
   background-color: ${colors.white};
@@ -13,7 +13,11 @@ export const ToolbarContainer = styled(Toolbar)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  height: 50px;
+
+  ${DESKTOP} {
+    height: 60px;
+  }
 `;
 
 export const Logo = styled.h1`
