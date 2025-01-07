@@ -20,7 +20,7 @@ export const ToolbarContainer = styled(Toolbar)`
   }
 `;
 
-export const Logo = styled.h1`
+export const Logo = styled.div`
   cursor: pointer;
 `;
 

@@ -34,25 +34,26 @@ export function Header() {
     <HideOnScroll>
       <S.Container position="static" color="secondary">
         <S.ToolbarContainer>
-          {/* 로고를 클릭하면 홈으로 이동 */}
+          {/* 로고 - 홈으로 이동 */}
           <S.Logo>
             <Link href="/">MONEYLOG</Link>
           </S.Logo>
 
           {/* 헤더 우측 버튼들 */}
           <S.RightIcons>
-            {/* 게시물 작성 페이지로 이동 */}
+            {/* 1. 게시물 작성 페이지로 이동 */}
             <Link href="/write">
               <IconButton color="inherit">
                 <EditIcon />
               </IconButton>
             </Link>
-            {/* 알림 */}
+            {/* 2. 알림 */}
             <IconButton color="inherit">
               <NotificationsIcon />
             </IconButton>
-            {/* 사용자 프로필 or 로그인/회원가입 */}
+            {/* 3. 사용자 프로필 or 로그인/회원가입 */}
             <IconButton color="inherit">
+              {/** 기본 이미지 추가 필요 */}
               <Avatar alt="유저 프로필" src="" />
             </IconButton>
           </S.RightIcons>
