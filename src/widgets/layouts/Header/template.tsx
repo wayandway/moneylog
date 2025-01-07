@@ -2,8 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import IconButton from '@mui/material/IconButton';
 import Avatar from '@mui/material/Avatar';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import EditIcon from '@mui/icons-material/Edit';
+import NotificationsIcon from '@mui/icons-material/NotificationsOutlined';
+import EditIcon from '@mui/icons-material/EditOutlined';
 import Slide from '@mui/material/Slide';
 import Link from 'next/link';
 
